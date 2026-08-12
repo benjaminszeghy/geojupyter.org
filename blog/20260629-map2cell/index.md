@@ -3,7 +3,7 @@ title: "Exploring Reproducibility in Geospatial GUIs Through Code Generation"
 description: |
   [Map2Cell](https://github.com/geojupyter/prototype-map2cell-ipyopenlayers) is a prototype version of ipyopenlayers that explores features to enable scientific
   reproducibility in GUI-driven geospatial workflows.
-date: "2026-01-11"
+date: "2026-08-12"
 image: "thumbnail.jpg"
 author:
   - name: "Benjamin Szeghy"
