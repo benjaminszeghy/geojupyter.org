@@ -24,13 +24,13 @@ They also need to be able to edit and iterate on it non-linearly, and distribute
 Existing GUI-based GIS tools aren't providing the affordances practitioners need to make that transition.
 For example, ArcGIS currently offers tooling to copy geoprocessing operations as Python code.
 However, the output is specific to the ArcGIS API.
-It is generally a single tool call, and operates opaquely in much the same manner as the original GUI tool, limiting visibility into the underlying processes and preventing seamless integration with interoperable standard scientific Python tools.
+It is generally a single tool call, and operates in much the same manner as the original GUI tool, limiting visibility into the underlying processes and preventing seamless integration with interoperable standard scientific Python tools.
 
 Over the course of our 2026 Spring semester internship at [The Eric & Wendy Schmidt Center for Data Science & Environment](https://dse.berkeley.edu/), Esha Potharaju and I explored a method of integrating this logic in a prototype we called [Map2Cell](https://github.com/geojupyter/prototype-map2cell-ipyopenlayers).
 
 ## Concept
 In existing geospatial science software packages, data processing operations are generally accessed entirely through forms.
-After being configured, they run invisibly in the background.
+After being configured, they run opaquely in the background.
 Because many tools are designed around the paradigm that the output is the entire deliverable, reproducibility is not an inherent part of established workflow.
 The goal of this work was to design a proof of concept that tackles all three of these drawbacks at once.
 
@@ -38,7 +38,7 @@ The Map2Cell prototype leverages Jupyter Notebook's inherent scientific reproduc
 It allows for visibility into and modification of the process by both the original researcher and others.
 Lastly, the solution was designed to help the user evolve the skills they need to do open science independent of a GUI if they so choose.
 
-In its present incarnation, this tool selects a vertical slice centered on drawing vector features, but a future iteration will extend this across more elements of the geospatial stack.
+In its present incarnation, this tool is centered on drawing vector features as a proof of concept. A future iteration could extend this across more elements of the geospatial stack.
 
 ## How it works
 First a vector drawing feature is added to ipyopenlayers.
